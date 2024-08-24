@@ -3,119 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satisfactory Fan Site - Présentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2e2e2e;
-            color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007acc;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #003b73;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #f2f2f2;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 20px;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-            opacity: 0.8;
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 2.5em;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .intro {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .intro h2 {
-            font-size: 2em;
-            color: #007acc;
-            margin-bottom: 20px;
-        }
-        .intro p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-        .images-section {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-        .images-section img {
-            width: 30%;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .images-section img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #007acc;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Satisfactory Fan Site - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Satisfactory Fan Site</h1>
     </header>
     <nav>
-        <a href="#presentation">Présentation</a>
-        <a href="#updates">Updates</a>
-        <a href="#wiki">Wiki</a>
+        <a href="index.html">Accueil</a>
+        <a href="updates.html">Mises à Jour</a>
+        <a href="wiki.html">Wiki</a>
     </nav>
-    <div class="content">
+    <div class="container">
         <!-- Section Présentation -->
         <section id="presentation">
-            <div class="hero">
-                <img src="https://example.com/satisfactory-hero.jpg" alt="Satisfactory Hero Image">
-            </div>
-            <div class="intro">
-                <h2>Présentation du Jeu</h2>
+            <div class="card">
+                <img src="https://example.com/satisfactory-hero.jpg" alt="Image Héro de Satisfactory">
+                <h2 class="section-title">Bienvenue sur le Site Fan de Satisfactory</h2>
                 <p>
                     Satisfactory est un jeu de gestion et de construction d'usines en monde ouvert, développé par Coffee Stain Studios.
                     Le joueur est chargé de construire et d'optimiser des chaînes de production dans un environnement extraterrestre immense.
@@ -123,9 +28,9 @@
                 </p>
             </div>
             <div class="images-section">
-                <img src="https://example.com/factory.jpg" alt="Factory Image">
-                <img src="https://example.com/vehicles.jpg" alt="Vehicles Image">
-                <img src="https://example.com/exploration.jpg" alt="Exploration Image">
+                <img src="https://example.com/factory.jpg" alt="Image Usine">
+                <img src="https://example.com/vehicles.jpg" alt="Image Véhicules">
+                <img src="https://example.com/exploration.jpg" alt="Image Exploration">
             </div>
         </section>
     </div>
