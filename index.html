@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satisfactory Fan Site</title>
+    <title>Satisfactory Fan Site - Présentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,20 +38,56 @@
         .content {
             padding: 20px;
         }
-        .section-title {
-            font-size: 1.8em;
-            margin-top: 30px;
-            border-bottom: 2px solid #007acc;
-            padding-bottom: 10px;
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
         }
-        .updates, .wiki {
-            margin-top: 20px;
+        .hero img {
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
         }
-        .update-item, .wiki-item {
-            margin-bottom: 15px;
-            padding: 15px;
-            background-color: #3e3e3e;
-            border-radius: 8px;
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .intro {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .intro h2 {
+            font-size: 2em;
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .images-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .images-section img {
+            width: 30%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .images-section img:hover {
+            transform: scale(1.05);
         }
         footer {
             background-color: #007acc;
@@ -68,45 +104,29 @@
         <h1>Satisfactory Fan Site</h1>
     </header>
     <nav>
+        <a href="#presentation">Présentation</a>
         <a href="#updates">Updates</a>
         <a href="#wiki">Wiki</a>
     </nav>
     <div class="content">
-        <!-- Section Updates -->
-        <section id="updates">
-            <h2 class="section-title">Dernières Mises à Jour</h2>
-            <div class="updates">
-                <div class="update-item">
-                    <h3>Mise à jour 7.2</h3>
-                    <p>La mise à jour 7.2 apporte de nouvelles fonctionnalités de gestion d'usine, des améliorations de la performance et la correction de bugs majeurs.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Mise à jour 7.1</h3>
-                    <p>Amélioration du système de convoyeurs et ajout de nouveaux biomes à explorer.</p>
-                </div>
-                <div class="update-item">
-                    <h3>Mise à jour 7.0</h3>
-                    <p>Introduction des véhicules automatisés et de la gestion avancée des ressources.</p>
-                </div>
+        <!-- Section Présentation -->
+        <section id="presentation">
+            <div class="hero">
+                <img src="https://example.com/satisfactory-hero.jpg" alt="Satisfactory Hero Image">
+                <div class="hero-text">Bienvenue sur le Site Fan de Satisfactory</div>
             </div>
-        </section>
-
-        <!-- Section Wiki -->
-        <section id="wiki">
-            <h2 class="section-title">Wiki</h2>
-            <div class="wiki">
-                <div class="wiki-item">
-                    <h3>Guide de la Production</h3>
-                    <p>Apprenez à optimiser votre production avec des chaînes de montage efficaces.</p>
-                </div>
-                <div class="wiki-item">
-                    <h3>Gestion des Ressources</h3>
-                    <p>Découvrez les meilleures pratiques pour collecter et utiliser les ressources de manière optimale.</p>
-                </div>
-                <div class="wiki-item">
-                    <h3>Biomes et Exploration</h3>
-                    <p>Explorez les différents biomes de la carte et découvrez leurs ressources uniques.</p>
-                </div>
+            <div class="intro">
+                <h2>Présentation du Jeu</h2>
+                <p>
+                    Satisfactory est un jeu de gestion et de construction d'usines en monde ouvert, développé par Coffee Stain Studios.
+                    Le joueur est chargé de construire et d'optimiser des chaînes de production dans un environnement extraterrestre immense.
+                    Explorez, construisez, automatisez, et exploitez les ressources de la planète pour atteindre une efficacité maximale.
+                </p>
+            </div>
+            <div class="images-section">
+                <img src="https://example.com/factory.jpg" alt="Factory Image">
+                <img src="https://example.com/vehicles.jpg" alt="Vehicles Image">
+                <img src="https://example.com/exploration.jpg" alt="Exploration Image">
             </div>
         </section>
     </div>
@@ -115,3 +135,4 @@
     </footer>
 </body>
 </html>
+
