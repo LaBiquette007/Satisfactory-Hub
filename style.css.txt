@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF5722; /* Orange dominant */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #E64A19; /* Une teinte plus foncée d'orange */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD180; /* Orange clair au survol */
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #FF5722;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF5722;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #E64A19;
+}
+
+footer {
+    background-color: #FF5722;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .images-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .images-section img {
+        width: 32%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+}
